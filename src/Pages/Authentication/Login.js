@@ -35,9 +35,11 @@ const Login = () => {
 
         logIn(email, password)
             .then(result => {
+                console.log("resulttttt", result)
                 const user = result.user;
                 console.log(user);
                 setLoginEmail(email);
+                localStorage.setItem('bookToken',user.accessToken )
 
             })
             .catch(error => {
@@ -45,6 +47,7 @@ const Login = () => {
                 setError(error.message);
 
             })
+        
 
     }
 
