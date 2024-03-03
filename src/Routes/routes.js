@@ -45,7 +45,7 @@ export const router = createBrowserRouter([
             {
                 path: "/categories/:name",
                 element: <PrivateRoute><Books></Books></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:10000/categories/${params.name}`)
+                loader: ({ params }) => fetch(`https://shop-backend-sigma.vercel.app/categories/${params.name}`)
             },
         ],
 
@@ -91,7 +91,7 @@ export const router = createBrowserRouter([
             {
                 path: "/dashboard/payment/:id",
                 element: <PrivateRoute><Payment></Payment></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:10000/payment/${params.id}`)
+                loader: ({ params }) => fetch(`https://shop-backend-sigma.vercel.app/payment/${params.id}`)
             },
         ]
     }

@@ -9,7 +9,7 @@ const MyOrders = () => {
     const { user } = useContext(AuthContext)
     const { data: myBookings = [], refetch, isLoading } = useQuery({
         queryKey: ['myBookings'],
-        queryFn: () => fetch(`http://localhost:10000/bookings/${user?.email}`, {
+        queryFn: () => fetch(`https://shop-backend-sigma.vercel.app/bookings/${user?.email}`, {
             headers: {
 
                 authorization: `bearer ${localStorage.getItem("bookToken")}`

@@ -7,7 +7,7 @@ const Book = ({ book, setModalBook }) => {
 
     const handleReport = (id) => {
         console.log(id)
-        fetch(`http://localhost:10000/books/report/${id}`, {
+        fetch(`https://shop-backend-sigma.vercel.app/books/report/${id}`, {
             method: "PUT",
             headers: {
                 "content-type": 'application/json',

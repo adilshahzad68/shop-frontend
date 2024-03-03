@@ -6,7 +6,7 @@ const useAdmin = email => {
 
     useEffect(() => {
         if (email) {
-            fetch(`http://localhost:10000/users/admin/${email}`)
+            fetch(`https://shop-backend-sigma.vercel.app/users/admin/${email}`)
                 .then(res => res.json())
                 .then(data => {
                     // console.log(data)

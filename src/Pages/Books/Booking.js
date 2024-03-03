@@ -20,7 +20,7 @@ const Booking = ({ book, setModalBook }) => {
         const booking = { location, sellerName, phone, img, status, sellerEmail, buyerName, buyerEmail: user.email, book: name, price: resalePrice }
 
 
-        fetch("http://localhost:10000/bookings", {
+        fetch("https://shop-backend-sigma.vercel.app/bookings", {
             method: "POST",
             headers: {
                 "content-type": "application/json",

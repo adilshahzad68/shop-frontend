@@ -8,7 +8,7 @@ import { useQuery } from '@tanstack/react-query';
 const Home = () => {
     const { data: books = [] } = useQuery({
         queryKey: ['books'],
-        queryFn: () => fetch('http://localhost:10000/booksAd')
+        queryFn: () => fetch('https://shop-backend-sigma.vercel.app/booksAd')
             .then(res => res.json())
     })
     if (books.length <= 0) {

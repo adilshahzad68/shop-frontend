@@ -9,10 +9,8 @@ import SellerNav from '../Seller/SellerNav/SellerNav';
 
 const Sidebar = () => {
     const { user, logout } = useContext(AuthContext)
-    // const [Seller,setSeller]=useState(false)
     const [isSeller] = useSeller(user?.email)
     const [isAdmin] = useAdmin(user?.email)
-    // console.log(isSeller)
     return (
         <div>
             {/* Branding & Profile Info */}

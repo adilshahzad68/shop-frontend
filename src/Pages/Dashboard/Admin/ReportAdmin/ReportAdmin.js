@@ -8,7 +8,7 @@ const ReportAdmin = () => {
 
     const { data: reportedItems = [], refetch, isLoading } = useQuery({
         queryKey: ['reportedItems'],
-        queryFn: () => fetch('http://localhost:10000/books/reported', {
+        queryFn: () => fetch('https://shop-backend-sigma.vercel.app/books/reported', {
             headers: {
 
                 authorization: `bearer ${localStorage.getItem("bookToken")}`
@@ -19,7 +19,7 @@ const ReportAdmin = () => {
 
     const handleDelete = (id) => {
         console.log(id)
-        fetch(`http://localhost:10000/books/reported/${id}`, {
+        fetch(`https://shop-backend-sigma.vercel.app/books/reported/${id}`, {
             method: "DELETE",
             headers: {
 

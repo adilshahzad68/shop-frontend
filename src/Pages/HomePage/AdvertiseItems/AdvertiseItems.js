@@ -5,7 +5,7 @@ import AdvertiseItem from './AdvertiseItem';
 const AdvertiseItems = () => {
     const { data: advertiseItems = [] } = useQuery({
         queryKey: ['advertiseItems'],
-        queryFn: () => fetch('http://localhost:10000/advertiseBooks')
+        queryFn: () => fetch('https://shop-backend-sigma.vercel.app/advertiseBooks')
             .then(res => res.json())
     })
     if (advertiseItems) {

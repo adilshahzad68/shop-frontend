@@ -9,7 +9,7 @@ const MyProducts = () => {
     const { user } = useContext(AuthContext)
     const { data: myProducts = [], refetch, isLoading } = useQuery({
         queryKey: ['myProducts'],
-        queryFn: () => fetch(`http://localhost:10000/books/${user?.email}`)
+        queryFn: () => fetch(`https://shop-backend-sigma.vercel.app/books/${user?.email}`)
             .then(res => res.json())
     })
 
@@ -17,7 +17,7 @@ const MyProducts = () => {
     // delete
     const handleDelete = (id) => {
         console.log(id)
-        fetch(`http://localhost:10000/books/${id}`, {
+        fetch(`https://shop-backend-sigma.vercel.app/books/${id}`, {
             method: "DELETE",
             headers: {
 
@@ -33,7 +33,7 @@ const MyProducts = () => {
     // advertise
     const handleAdvertise = (id) => {
         console.log(id)
-        fetch(`http://localhost:10000/books/${id}`, {
+        fetch(`https://shop-backend-sigma.vercel.app/books/${id}`, {
             method: "PUT",
             headers: {
 

@@ -6,7 +6,7 @@ import NoElements from '../../NoElements/NoElements';
 const AllBuyers = () => {
     const { data: buyers = [], refetch, isLoading } = useQuery({
         queryKey: ['buyers'],
-        queryFn: () => fetch('http://localhost:10000/buyers', {
+        queryFn: () => fetch('https://shop-backend-sigma.vercel.app/buyers', {
             headers: {
 
                 authorization: `bearer ${localStorage.getItem("bookToken")}`
@@ -19,7 +19,7 @@ const AllBuyers = () => {
 
     const handleDelete = (id) => {
         console.log(id)
-        fetch(`http://localhost:10000/buyers/${id}`, {
+        fetch(`https://shop-backend-sigma.vercel.app/buyers/${id}`, {
             method: "DELETE",
             headers: {
 
