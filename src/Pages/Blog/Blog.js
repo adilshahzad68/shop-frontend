@@ -15,7 +15,7 @@ const Blog = () => {
 
                                 Mobile: +48-576227792 <br />
 
-                                Thanks for visiting :)</p>
+                                Thanks for visiting my Application:)</p>
                         </div>
 
                     </div>
