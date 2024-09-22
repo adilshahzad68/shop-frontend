@@ -136,13 +136,14 @@ const Register = () => {
                     </div>
                     {/* <p className='text-xl text-yellow-400 py-3'>{error}</p> */}
                     <button type="submit" className="text-white block bg-indigo-500 hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-
+                    {/* 
                     <div className="divider">Or</div>
                     <div className='flex items-center flex-col
                     '>
                         <button onClick={handleGoogleUser} type="submit" className="text-slate-800 border-2 border-yellow-400 hover:bg-yellow-400 block m-2 font-medium rounded-lg  px-5 lg:w-96 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sign in With Google</button>
 
                     </div>
+                    */}
                     <p className='text-center my-2'><span>Already Have An Account ?</span> <Link className='text-orange-400' to="/login">Log In</Link></p>
                 </form>
             </div>
