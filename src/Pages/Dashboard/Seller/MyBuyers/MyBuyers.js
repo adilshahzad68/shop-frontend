@@ -22,7 +22,7 @@ const MyBuyers = () => {
     }
     if (myBuyers.length < 1) {
         return <NoElements item="Buyers"></NoElements>
-    }
+    }console.log(myBuyers)
     return (
         <div>
             {myBuyers.length}
@@ -38,7 +38,7 @@ const MyBuyers = () => {
                             </th>
                             <th>Name</th>
                             <th>Phone Number</th>
-                            <th>Email Address</th>
+                            <th>Email Address 111111</th>
                             <th>Location</th>
                             <th></th>
                         </tr>

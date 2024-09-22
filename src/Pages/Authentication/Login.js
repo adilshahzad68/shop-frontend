@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate, Link, useLocation } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider';
 import useToken from '../../Hooks/useToken';
 import { toast } from 'react-hot-toast';
@@ -19,6 +19,9 @@ const Login = () => {
     const location = useLocation()
 
     const from = location.state?.from?.pathname || '/'
+    
+   
+    
 
     useEffect(() => {
         if (token) {
@@ -40,7 +43,7 @@ const Login = () => {
                 console.log(user);
                 setLoginEmail(email);
                 localStorage.setItem('bookToken',user.accessToken )
-
+                navigate("/");
             })
             .catch(error => {
                 console.log(error.message)
