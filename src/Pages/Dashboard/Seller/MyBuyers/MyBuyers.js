@@ -38,7 +38,7 @@ const MyBuyers = () => {
                             </th>
                             <th>Name</th>
                             <th>Phone Number</th>
-                            <th>Email Address 111111</th>
+                            <th>Email Address</th>
                             <th>Location</th>
                             <th></th>
                         </tr>
@@ -46,7 +46,7 @@ const MyBuyers = () => {
                     <tbody>
 
                         {
-                            myBuyers.map((myBuyer, i) => <tr key={myBuyer._id}>
+                            myBuyers?.map((myBuyer, i) => <tr key={myBuyer._id}>
                                 <th>
                                     {i + 1}
                                 </th>

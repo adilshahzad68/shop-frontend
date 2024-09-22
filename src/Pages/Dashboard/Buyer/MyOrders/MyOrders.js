@@ -24,7 +24,7 @@ const MyOrders = () => {
     if (isLoading) {
         return <BigLoading></BigLoading>
     }
-    if (myBookings.length < 1) {
+    if (myBookings?.length < 1) {
         return <NoElements item="Bookings"></NoElements>
     }
     return (
@@ -49,7 +49,7 @@ const MyOrders = () => {
                     <tbody>
 
                         {
-                            myBookings.map((myBooking, i) => <tr key={myBooking._id}>
+                            myBookings?.map((myBooking, i) => <tr key={myBooking._id}>
                                 <th>
                                     {i + 1}
                                 </th>
