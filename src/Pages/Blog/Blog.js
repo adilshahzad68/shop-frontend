@@ -17,7 +17,7 @@ const Blog = () => {
 
         <h2 className="text-left font-bold text-xl">Key Features of Buy and Sell Store:</h2> 
         <ul>
-            <p>paragraph</p>
+            
         
             <li><strong>Online Buying & Selling: </strong>
             <p> At Buy and Sell Store, users can seamlessly buy or sell products such as electronics, clothing, home appliances, and more. Whether you are selling old gadgets or hunting for great products, our platform connects buyers and sellers from all over. </p></li>
