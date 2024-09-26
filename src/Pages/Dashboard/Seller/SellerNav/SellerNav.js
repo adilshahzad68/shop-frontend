@@ -15,7 +15,7 @@ const SellerNav = () => {
                 <Link to="/dashboard/myproduct"><GiBookPile></GiBookPile>My Products</Link>
               </li>
               <li className=" font-semibold text-lg">
-                <Link to="/dashboard/mybuyer"><FaUserAlt></FaUserAlt>My Order</Link>
+                <Link to="/dashboard/mybuyer"><FaUserAlt></FaUserAlt>My Buyers</Link>
               </li>
              
               </ul>
