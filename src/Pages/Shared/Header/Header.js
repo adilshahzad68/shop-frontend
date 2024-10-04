@@ -33,7 +33,7 @@ const Header = () => {
             <Link to="/">
               <div className='flex items-center'>
                 <img src="{logo}" className="w-12 rounded-full" alt="" />
-                <h2 className='text-2xl ml-2 font-bold text-primary  hover:text-indigo-600'>Buy&Sell Store!</h2>
+                <h2 className='text-2xl ml-2 font-bold text-primary  hover:text-indigo-600'>Buy&Sell Store AAA</h2>
               </div>
             </Link>
 
